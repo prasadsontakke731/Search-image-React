@@ -17,7 +17,12 @@ function SearchBar({ onSubmit }) {
     <div className='search-bar'>
       <form onSubmit={handleFormSubmit}>
         <label htmlFor=''>Enter Search Term</label>
-        <input type='text' value={term} onChange={handleChange} />
+        <input
+          className='input'
+          type='text'
+          value={term}
+          onChange={handleChange}
+        />
       </form>
     </div>
   );
